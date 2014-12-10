@@ -116,7 +116,7 @@ function installUbuntu {
   set -x
 
   sudo apt-get -q update || echo 'apt-get update failed. Continuing...'
-  sudo apt-get -y install python-pip build-essential python-zmq rng-tools \
+  sudo apt-get -y install python-pip build-essential libzmq3-dev rng-tools \
   python-dev libjpeg-dev sqlite3 openssl \
   alien libssl-dev python-virtualenv lintian libjs-jquery
 
